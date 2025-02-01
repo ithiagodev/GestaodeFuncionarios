@@ -10,7 +10,7 @@ def painel():
     caminho_arquivo1 = os.path.join(diretorio, "empresa.txt")
 
     # Funções de Validação
-    def leiaint(msg):
+    def leia_int(msg):
         while True:
             try:
                 n = int(input(msg))
@@ -23,7 +23,7 @@ def painel():
             else:
                 return n
 
-    def leiastr(msg):
+    def leia_str(msg):
         while True:
             try:
                 n = input(msg).strip()
@@ -38,7 +38,7 @@ def painel():
             else:
                 return n
 
-    def leiafloat(msg):
+    def leia_float(msg):
         while True:
             try:
                 n = float(input(msg))
@@ -87,21 +87,21 @@ def painel():
 
     while True:
         menu()
-        opcao = leiaint("Escolha uma das opções para prosseguir: ")
+        opcao = leia_int("Escolha uma das opções para prosseguir: ")
 
         match opcao:
             case 1:
                 cabeçalho("Informe os dados do novo funcionário", cor="\033[32m")
-                nome = leiastr("Nome: ").capitalize()
-                idade = leiaint("Idade: ")
+                nome = leia_str("Nome: ").capitalize()
+                idade = leia_int("Idade: ")
                 while True:
                     sexo = input("Sexo [M/F]: ").strip().upper()
                     if sexo in "MF":
                         break
                     print("\033[31mERRO!\033[m Digite apenas \033[32mM\033[m ou \033[31mF\033[m.")
-                cargo = leiastr("Cargo: ")
-                funcao = leiastr("Função: ")
-                salario = leiafloat("Salário: ")
+                cargo = leia_str("Cargo: ")
+                funcao = leia_str("Função: ")
+                salario = leia_float("Salário: ")
                 cadastrar_funcionario(nome, idade, sexo, cargo, funcao, salario)
 
             case 2:
