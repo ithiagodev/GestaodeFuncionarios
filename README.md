@@ -7,7 +7,7 @@ Este projeto é desenvolvido inteiramente em Python. Para garantir o funcionamen
 - Python 3.13 ou superior instalado.
 
 ## Estrutura dos Arquivos
-1. **Main Script (ex.: `Painel.py`)**: Arquivo principal para iniciar a aplicação. Contém a função `painel`, responsável pelo menu de opções e chamada de funções principais.
+1. **Main Script (ex.: `painel.py`)**: Arquivo principal para iniciar a aplicação. Contém a função `painel`, responsável pelo menu de opções e chamada de funções principais.
 2. **Funções de Gestão**:
    - **Cadastro**: Adiciona novos funcionários com nome, idade, sexo, cargo, função e salário.
    - **Visualização**: Exibe dados de um funcionário específico ou lista todos os funcionários ordenados alfabeticamente.
