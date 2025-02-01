@@ -4,13 +4,6 @@ Aplicação de gerenciamento de funcionários em Python. Permite registrar, visu
 ## Requisitos
 Este projeto é desenvolvido inteiramente em Python. Para garantir o funcionamento correto, certifique-se de que sua versão do Python é compatível com o código utilizado.
 
-### Instalação de dependências (se necessário):
-Instale as dependências executando:
-```bash
-pip install -r requirements.txt
-```
-**Obs:** Este projeto não utiliza bibliotecas externas, então, por padrão, não há dependências listadas.
-
 ## Estrutura dos Arquivos
 1. **Main Script (ex.: `Painel.py`)**: Arquivo principal para iniciar a aplicação. Contém a função `painel`, responsável pelo menu de opções e chamada de funções principais.
 2. **Funções de Gestão**:
