@@ -18,7 +18,7 @@ Este projeto é desenvolvido inteiramente em Python. Para garantir o funcionamen
 ## Como Executar
 No terminal, execute:
 ```bash
-python interface\Painel.py
+python Painel.py
 ```
 O menu interativo permitirá navegar entre as opções de cadastro, exibição e remoção de funcionários.
 
